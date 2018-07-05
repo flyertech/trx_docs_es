@@ -1,2 +1,2 @@
-# trx_docs_it
-Documentazione di integrazione per Transactionale in italiano
+# trx_docs_es
+Documentación española
