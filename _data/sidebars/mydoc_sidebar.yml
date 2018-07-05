@@ -1,0 +1,124 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Integration Doc
+  version: 2.0
+  folders:
+
+
+  - title: Panoramica
+    output: web, pdf
+    folderitems:
+
+  #   - title: Panoramica
+  #     url: /index.html
+  #     output: web, pdf
+
+  # - title: Istruzioni tecniche custom
+  #   output: web, pdf
+  #   folderitems:
+
+  #   - title: Integrazione completa
+  #     url: /full_integration.html
+  #     output: web, pdf
+
+  #   - title: Integrazione semplificata
+  #     url: /simplified_integration.html
+  #     output: web, pdf
+
+  #   - title: 
+  #     subfolders:
+  #     - title: Dove inserire lo snippet
+  #       output: web, pdf
+  #       subfolderitems:
+
+  #       - title: Home Page
+  #         url: /snippet_homepage.html
+  #         output: web, pdf
+
+  #       - title: Pagina risultati di ricerca
+  #         url: /snippet_pagina_ricerca.html
+  #         output: web, pdf
+        
+  #       - title: Pagina prodotto
+  #         url: /snippet_pagina_prodotto.html
+  #         output: web, pdf
+        
+  #       - title: Carrello
+  #         url: /snippet_carrello.html
+  #         output: web, pdf
+        
+  #       - title: Pagina di conferma
+  #         url: /snippet_pagina_conferma.html
+  #         output: web, pdf
+    
+  #   - title: Documentazione Eventi
+  #     url: /events.html
+  #     output: web, pdf
+    
+  #   - title: Eventi personalizzati
+  #     url: /custom_events.html
+  #     output: web, pdf
+
+  #   - title: Entità
+  #     url: /entities.html
+  #     output: web, pdf
+    
+  #   - title: Webhook
+  #     url: /webhook.html
+  #     output: web, pdf
+
+  - title: Istruzioni tecniche piattaforme
+    output: web, pdf
+    folderitems:
+    
+    # - title: Shopify
+    #   url: /shopify.html
+    #   output: web, pdf
+    
+    - title: Prestashop <= 1.6
+      url: /prestashop16.html
+      output: web, pdf
+
+    - title: Prestashop >= 1.7
+      url: /prestashop17.html
+      output: web, pdf
+    
+    # - title: Woocommerce >= 3.3.0
+    #   url: /woocommerce330.html
+    #   output: web, pdf
+
+    # - title: Magento 1.x
+    #   url: /magento.html
+    #   output: web, pdf
+
+    # - title: Storeden
+    #   url: /storeden.html
+    #   output: web, pdf
+
+  - title: Verifica integrazione e webhook
+    output: web, pdf
+    folderitems:
+
+      - title: Verifica integrazione
+        url: /verify_integration.html
+        output: web, pdf
+
+      - title: Verifica webhook
+        url: /verify_webhook.html
+        output: web, pdf
+  
+  - title: Lingua
+    output: web, pdf
+    folderitems:
+
+    - title: English
+      external_url: https://flyertech.github.io/trx_docs_en/
+      output: web, pdf
+
+    - title: Italiano
+      external_url: https://flyertech.github.io/trx_docs_it/
+      output: web, pdf
+
+  
