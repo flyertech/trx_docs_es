@@ -1,14 +1,11 @@
-L'integrazione consiste nell'inclusione di un tag Javascript che consente di acquisire le intenzioni dell'utente durante la navigazione del sito web.
-Lo snippet è composto da due parti:
+La integración consiste en la inclusión de un JavaScript tag que permite adquirir las intenciones de los usuarios durante la navegación en vuestra página web. El snippet está formado por 2 partes:
+- El [loader](snippet_loader.html): Una librería JavaScript que ha de ser cargada en cada página. Es requerido para que interactúe con los otros snippets y los servidores de Transactionale y para habilitar el IU para los usuarios finales.
+- El tracker: permite trackear los diferentes eventos que ocurren durante la navegación de los visitantes (productos que ven o compran) y los usaremos para hacer las mejores recomendaciones targuetizadas.
 
-- Il [loader](snippet_loader.html), una libreria di Javascript che deve essere dichiarata in ogni pagina e si occupa della costruzione e dell'invocazione delle chiamate ai server Transactionale.
+Implementar el tracker es rápido, simple e invisible para los usuarios. La calidad de nuestras recomendaciones depende directamente de la calidad de la implementación de este tracker, incluyendo la instalación del tag en cada página, dar todos los parámetros disponibles, etc. 
 
-- Il tracker ci consente di acquisire gli eventi di navigazione dei visitatori del sito web (prodotti visti e acquistati), che quindi utilizziamo per determinare le raccomandazioni pertinenti e personalizzate.
+El tag:
 
-Implementare il tracker è rapido, semplice ed invisibile per gli utenti. La qualità delle raccomandazioni dipende in modo diretto dalla qualità dell'implementazione del tracker, inclusi i tag installati in tutte le pagine, il trasferimento dei parametri corretti, etc.
-
-Lo snippet:
-
-- Non altera dal punto di vista visivo il sito ed è completamente invisibile per gli utenti.
-- E' asincrono e non rallenta il caricamento delle pagine.
-- Deve essere implementato nei punti corretti di ciascuna pagina del sito.
+- No altera de ninguna manera la visión de la página y es invisible para los usuarios.
+- Es asincrónico y no ralentiza al cargar la página.
+- Debe ser integrado en las partes correctas de las de la página de vuestra web.

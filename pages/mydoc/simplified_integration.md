@@ -1,49 +1,48 @@
 ---
-title: Integrazione semplificata
+title: "Integración simplificada:"
 sidebar: mydoc_sidebar
 permalink: simplified_integration.html
 folder: mydoc
 ---
 
-### Panoramica
+### Sumario general:
 {% include_relative partials/integration_overview.md %}
 
-{% include callout.html content="L'integrazione semplificata è sconsigliata per l'attività di publishing in quanto riduce quantità e qualità della profilazione automatica, e quindi riduce le performance di lead generation." %}
+{% include callout.html content="La integración simplificada no se aconseja para publishers ya que reduce la calidad de hacer perfiles así como el performance de la generación de leads." %}
 
-### Inserisci il tag in tutte le pagine
-Il tag va inserito idealmente prima del tag di chiusura `</body>`.
-Il tag include il loader, più l'evento `viewPage`:
-
+### Pon el loader tag en todas las páginas
+El loader tag va en `<head>` de tu plantilla base.
 
 {% include_relative snippets/loader_viewPage.md %}
 
-### Inserisci il tag `trackTransaction` nella pagina di conferma ordine
-Puoi inserire questo prima del tag di chiusura `</body>`, e in ogni caso dopo il loader, cioè lo snippet che va inserito in ogni pagina mostrato nel paragrafo precedente.
-Dovrai riempire tutti i campi disponibili con i valori effettivi relativi all'ordine appena concluso.
+### Pon trackTransaction en la página de confirmación de pedido:
+Este tag debe ser insertado preferiblemente antes de cerrar `</body>`, o en cualquier caso después del loader dentro del tag `<head>`. Debes rellenar tantos campos como puedas con los valores necesarios relativos a la orden presentada. 
 
-{% include callout.html content="ATTENZIONE: I valori d'esempio ('xxxx') vanno sostituiti con le relative variabili, potete eliminare i campi di cui non tracciate il loro valore. " %}
+{% include callout.html content="ATENCIÓN: el ejemplo valor (‘xxxx’) debe ser reemplazado con la correspondiente variable; puedes eliminar los campos que no desees conservar.
+" %}
 
 {% include_relative snippets/tracktransaction.md %}
 
-### Selezione automatica touchpoint
-Inserendo `auto` come `touchpointType`, verrà attivato automaticamente il touchpoint di tipo mail o web in base ai valori forniti. Nel caso in cui venga attivato il touchpoint di tipo web e non è stato inserito il touchpointId, il sistema utilizzerà quello di default.
+### Selección del touchpoint automático
+Configurando `auto` como `touchpointType`, el mejor touchpoint será activado automáticamente en concordancia con los valores aportados.En caso de que el touchpoint de la web sea activado sin aportar touchpointId, será usado el que hay por default.
 
-### Touchpoint web o auto
-Se utilizzi il touchpoint web dovrai specificare dove vuoi che vengano mostrate le offerte nella tua pagina perciò dovrai inserire un `<div id="tr_touchpoint_container"></div>` nel punto desiderato. 
+### Web y auto touchpoints
+Si estás usando una web (ó auto) touchpoint, debes definir dónde quieres que aparezcan las ofertas en tu página. Para hacerlo, inserta  `<div id="tr_touchpoint_container"></div>` en el lugar escogido.
 
-### Banner offerte
-Nel caso si utilizzi un touchpoint web in versione banner, è possibile scegliere due layout: orizzontale (default) oppure verticale.
+### Ofertas con banner
+Si quieres usar la versión banner en tu touchpoint web, tienes 2 disposiciones disponibles para elegir: Horizontal (por defecto) o vertical. 
+
 
 {% include image.html file="banner_horizontal.png" url="images/banner_horizontal.png" %}
 
-Aggiungendo la classe `tr-touchpoint-layout-vertical` nel `<div>` in questo modo:<br>
+Puedes activar la disposición vertical añadiendo `tr-touchpoint-layout-vertical` class al `<div>` de esta manera:<br>
  `<div id="tr_touchpoint_container" class="tr-touchpoint-layout-vertical"></div>` <br>
- il banner avrà layout verticale:
+El banner se verá de una manera similar a esta:
 
 {% include image.html file="banner_vertical.png" url="images/banner_vertical.png" %}
 
-### Verifica integrazione e webhook
+### Verificar la integración y webhook
 
-Puoi verificare il corretto funzionamento dell'integrazione tecnologica e del webhook url tramite queste semplici istruzioni:
+Puedes mirar que funcione correctamente la integración tecnológica y el webhook url a través de estas instrucciones sencillas:
 
 {% include_relative partials/link_verify.md %}

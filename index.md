@@ -1,53 +1,49 @@
 ---
-title: "Panoramica"
+title: "Visión General"
 sidebar: mydoc_sidebar
 permalink: index.html
 folder: mydoc
-summary: Dettagli integrazione v2
+summary: Detalles de la integración V2 
 
 ---
 
-Questa è la **knowledge base tecnica di Transactionale**, dove potrai trovare tutti i dettagli e le spiegazioni tecniche per integrare il tuo e-Shop con Transactionale.
+Esta es la documentación técnica de Transactionale donde puedes encontrar todos los detalles para poder integrar tu e-shop con Transactionale.
 
-{% comment %}
-{% include callout.html content="Se il tuo shop è basato su **WooCommerce** o **PrestaShop** possiamo fornirti plug-in di integrazione già pronti, che potrai installare senza sforzo e che potranno essere completamente configurati dal tuo backend, senza praticamente nessun intervento tecnico." %}
-{% endcomment %}
+# ¿Cómo hacerlo? Instrucciones técnicas:
 
-# Cosa devi fare? Istruzioni tecniche
+Os podéis integrar de una manera muy simple:
 
-L'integrazione prevede due modalità:
-
-  - [Integrazione completa](full_integration.html), **consigliata** per performance ottimali
-  - [Integrazione semplificata](simplified_integration.html)
+  - [Full integration](full_integration.html), **recomendado** para una mejor rendimiento (versión en inglés),
+  - [Integración simplificada](simplified_integration.html) .
 
 E' possibile attivare la [modalità di sviluppo](debugging.html) per verificare la correttezza dell'integrazione.
 
-# Funzionamento del network
+# Cómo funciona el network
 
 ## Advertiser {#advertiser}
-Con **Transactionale** potrai coinvolgere nuovi clienti nel tuo e-Shop e tracciare le loro conversioni.
+Con **Transactionale** podrás atraer nuevos clientes potenciales en tu e-shop y traquear sus conversiones.
 
-### Come coinvolgo nuovi clienti
-Potrai in pochi passi creare una **campagna di advertising** e noi **la distribuiremo sul network**. I clienti di altri shop riceveranno le tue offerte, e le reclameranno sul tuo sito. Questo ti permetterà di acquisire **lead** qualificati di clienti reali che fanno acquisti online.
+### Cómo atraigo a nuevos clientes?
+En sólo unos pasos, serás capaz de crear una **campaña de publicidad**y nosotros **la distribuiremos en nuestro network**. Los clientes de otras tiendas recibirán tu oferta y querrán hacer uso de ella en tu página web. Esto te permitirá adquirir Leads cualificados de clientes reales que compran online.
 
-Se scegli anche di essere un [publisher](#publisher), puoi anche **monetizzare** e, se vuoi, reinvestire il guadagno in campagne di acquisizione, riducendone i costi.
+Si también eliges ser [publisher](#publisher), puedes **monetizar**, y  reinvertir las ganancias en campañas de adquisición de leads cualificados, disminuyendo su coste. 
 
-### Gestione dei lead generati
-Teniamo traccia di tutti i lead generati, permettendoti di monitorare sulla nostra piattaforma le prestazioni delle tue campagne.
+### Cómo gestionar los leads generados:
+Nosotros llevamos un registro de todos los leads generados, permitiéndole monitorizar en su plataforma cómo están performando las campañas.
 
-Ma abbiamo anche la possibilità di **comunicare in tempo reale** al tuo sistema ogni **lead generato** per permetterti di raccogliere i dati dei lead anche direttamente sulla tua piattaforma. Questo consente l'integrazione con **newsletter**, sistemi di **email automation**, sistemi di **tracciamento**, **remarketing** o altro. Guarda la sezione sul [webhook](webhook.html) per i dettagli di implementazione. L'utilizzo del webhook è necessario per abilitare il sistema di **deduplica**.
+A la vez podemos enviar cada lead generado en tu sistema en **tiempo real** para permitirte coleccionar todos los datos de los **leads generados** directamente en tu plataforma.Esto permite integraciones con **newsletters**, sistemas de **email automation**, remarketing y más. Ve a la sección de [webhook](webhook.html) para los detalles de la implementación. El uso de webhook es requerido para habilitar el sistema de **deduplication**.
 
 ## Publisher {#publisher}
-Con **Transactionale** potrai monetizzare pubblicizzando offerte speciali per i tuoi clienti, facendoli felici e guadagnando.
+Con **Transactionale** serás capaz de monetizar gracias a tus clientes al mismo tiempo que premias ofreciéndoles ofertas especiales targuetizadas.
 
-### Come guadagno dal network
-Quando Mario, uno dei tuoi clienti, **finalizza un ordine sul tuo e-shop**, Transactionale gli manderà delle offerte di altri shop del nostro network (complementari e non concorrenti). Ogni volta che un’offerta genera un lead (ovvero Mario clicca sull’offerta e atterra per la prima volta sul sito pubblicizzato), c’è un **guadagno** per te.
+### Cómo gano a través del network?
+Cuando Lisa, uno de tus clientes, **finaliza una compra en tu eshop**, Transactionale le enviará unas ofertas de otras tiendas de la red- Complementarias, no competencia- Cada vez que una oferta genera un lead, ( que es cuando Lisa hace click en la oferta y aterriza en la web del advertiser) tú, **ganas dinero**.
 
-In aggiunta, se sei anche un [advertiser](#advertiser), potrai reinvestire i guadagni per la tua lead generation, riducendo i costi di acquisizione.
+Además, si eres [advertiser](#advertiser), puedes reinvertir tus ganancias en campañas de adquisición de leads cualificados bajando los costes de las mismas.
 
-### Come funziona
-1. Mario ordina sul tuo shop,
-2. Ogni volta che **conclude un ordine** (cosa che in genere accade sulla **pagina di conferma dell’ordine**), il tuo shop **ci notifica** dell’avvenuto ordine tramite uno **snippet di tracciamento**,
-3. Non appena riceviamo la chiamata, Transactionale manderà a Mario una **mail transazionale** con delle offerte,
-4. Se Mario clicca su una delle offerte, verrà generato un **lead**.
+### Cómo funciona?
+1. Lisa hace una orden en tu eshop,
+2. Cada vez que se **finaliza una orden**, tu tienda **nos lo notifica** a través de un **snippet de trackeo**, normalmente **en la thank you page**,
+3. Tan pronto como Transactionale recibe la notificación, mandará a Lisa el **email Transactionale** con ofertas targuetizadas,
+4. Si Lisa hace click en la oferta, se genera un **lead**.
 

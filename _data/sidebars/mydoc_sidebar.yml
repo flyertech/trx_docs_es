@@ -7,25 +7,25 @@ entries:
   folders:
 
 
-  - title: Panoramica
+  - title: Visión General
     output: web, pdf
     folderitems:
 
-  #   - title: Panoramica
-  #     url: /index.html
-  #     output: web, pdf
+    - title: Visión General
+      url: /index.html
+      output: web, pdf
 
-  # - title: Istruzioni tecniche custom
-  #   output: web, pdf
-  #   folderitems:
+  - title: Instrucciones técnicas custom
+    output: web, pdf
+    folderitems:
 
   #   - title: Integrazione completa
   #     url: /full_integration.html
   #     output: web, pdf
 
-  #   - title: Integrazione semplificata
-  #     url: /simplified_integration.html
-  #     output: web, pdf
+    - title:  Integración simplificada
+      url: /simplified_integration.html
+      output: web, pdf
 
   #   - title: 
   #     subfolders:
@@ -81,9 +81,9 @@ entries:
       url: /prestashop16.html
       output: web, pdf
 
-    - title: Prestashop >= 1.7
-      url: /prestashop17.html
-      output: web, pdf
+  #  - title: Prestashop >= 1.7
+  #    url: /prestashop17.html
+  #    output: web, pdf
     
     # - title: Woocommerce >= 3.3.0
     #   url: /woocommerce330.html
@@ -97,11 +97,11 @@ entries:
     #   url: /storeden.html
     #   output: web, pdf
 
-  - title: Verifica integrazione e webhook
+  - title: Verifica la integración y webhook
     output: web, pdf
     folderitems:
 
-      - title: Verifica integrazione
+      - title: Verifica la integración
         url: /verify_integration.html
         output: web, pdf
 

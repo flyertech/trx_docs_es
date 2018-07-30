@@ -2,7 +2,7 @@
 <script>
     window._trx = window._trx || [];
     window._trx.push(
-        { event: 'setAccount', account: '**API-KEY**', country: 'IT' },
+        { event: 'setAccount', account: '**API-KEY**', country: 'ES' },
         { event: 'viewPage' }
     );
 </script>

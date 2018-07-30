@@ -3,13 +3,13 @@ window._trx.push(
     {
         event: 'trackTransaction',
         transaction: {
-            id: 'xxxxx', // Codice ordine
+            id: 'xxxxx', // número de orden
             subtotal: xxx.xx,
             shipping: xxx.xx,
             discount: xxx.xx,
-            total: xxx.xx, // Required
+            total: xxx.xx, // requerido
             coupon: 'xxx', 
-            currency: 'EUR', // EUR by default
+            currency: 'EUR', // EUR por default
         },
         items: [
             {id: x, price: xx.xx, quantity: x}, 
@@ -20,7 +20,7 @@ window._trx.push(
             address2: 'xxxxxx',
             city: 'xxxxx',
             postalCode: 'xxxxx',
-            country: 'IT',
+            country: 'ES',
             phone: 'xxxxxxxx',
             phoneMobile: 'xxxxxxxxx',
         },
@@ -29,11 +29,11 @@ window._trx.push(
             lastName: 'Xxxxxxx',
             company: 'xxxxxxxx',
             email: 'xxxxx@xxxx.xx',
-            birthDate: 'aaaa-mm-gg',
-            gender: 'x', 
-            optin: xxxx // Se l'utente ha dato il consenso per le comunicazioni commerciali
+            birthDate: 'yyyy-mm-dd',
+            gender: 'x', // M o F
+            optin: xxxx // si los usuarios optan por recibir ofertas comerciales
         },
-        // Esempio con integrazione annunci direttamente in pagina ordine
+          // ejemplo de integración de ads directamente en la página web
         touchpointType: 'auto', 
     }
 );

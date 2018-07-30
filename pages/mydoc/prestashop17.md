@@ -1,61 +1,65 @@
 ---
-title:  "Come installare e configurare il plugin Prestashop >= 1.7"
+title:  "Cómo instalar y configurar el módulo de Prestashop  >= 1.7"
 permalink: prestashop17.html
 sidebar: mydoc_sidebar
 folder: mydoc
 ---
 
 
-### Scarica l'ultima versione del plugin Prestashop
- Puoi scaricare l'ultima versione del plugin prestashop dalla sezione  **My Account -> Integration -> Select Prestashop >= 1.7**, clicca su **Download the plugin**
+###  Obtener el último módulo de Prestashop:
+Para obtener la última versión del módulo de Prestashop puedes descargarla desde tu dashboard yendo  **My Account -> Integration -> Select Prestashop >= 1.7**,  haciendo click en **Download the plugin**
 
 {% include image.html file="prestashop17/downloadplugin.png" url="images/prestashop17/downloadplugin.png" %}
 
-### Installa il modulo
-
-Nella sezione **Modules and Services** del tuo Prestashop installa il plugin appena scaricato. Al termine dell'installazione clicca su **Configure**
+### Instalación del módulo
+Ve a Prestashop **Modules and Services** e instala el plugin que acabas de descargar. Al final de la instalación haz click en **Configure**.
 
 {% include image.html file="prestashop17/uploadplugin.png" url="images/prestashop17/uploadplugin.png" %}
 
 
-### Dettaglio configurazione
-Verrai reindirizzato alla pagina di configurazione del modulo
+### Detalles del ajuste
+Serás redirigido a la página de configuración del módulo
 {% include image.html file="prestashop17/4.png" url="images/prestashop17/4.png" %}
 
-Di seguito i dettagli dei campi visualizzati
+Los detalles de los campos desplegados se muestran a continuación:
 
-*Auth Key*|utilizzata per identificare il tuo account. **Segui le istruzioni per copiarla qui**.
-*Country*| le due lettere del codice ISO dove opera il tuo shop.
-*Touchpoint Type*|come veicoli le offerte ai tuoi clienti. Può essere Mail, Web o Mail+Web.
-*Web Touchpoint Id*|se utilizzi il touchpoint web, devi specificare un id, altrimenti prenderà un id di default.
-*Web Touchpoint Text*|se utilizzi il touchpoint web, è possibile specificare il testo da visualizzare sopra le offerte.
-*Automatically import leads*|abilita l'importazione automatica dei leads. Se abilitato, copia ed incolla l'URL visualizzato nel tuo account Transactionale su Account personale -> Integrazione -> URL webhook
+*Auth Key*|Se usa para identificar tu cuenta. **Sigue las instrucciones más abajo para rellenarlo**.
+*Country*|de dos letras ISO para el país en el que tu tienda opera. IT, ES.
+*Touchpoint Type*|Cómo entregar las ofertas a los clientes. Asegúrate de que configuras los touchpoints en tu cuenta de Transactionale. Puede ser Web, Mail, Web+Mail.
+*Web Touchpoint Id*|Si usas touchpoint web, puedes especificar un ID, sino, se usará el ID que está por default.
+*Web Touchpoint Text*|Si usas web touchpoint descrito arriba, puedes especificar el texto que quieres que se muestre en la oferta.
+*Import leads automatically*|Habilita la importación automática de leads. Cuando habilitado, copia y pega URL desplegado en tu cuenta de Transactionale así: My Account -> Integration -> Webhook URL.
+
 
 
 {% include image.html file="prestashop17/5.png" url="images/prestashop17/5.png" %}
 
-### Abilita/Disabilita Optin
-E' necessario attivare l'opt-in dalla sezione di **Preferences -> Customers**.
+### Habilitar/ Deshabilitar el Optin
+El opt-in debe ser activado desde la sección **Preferencias -> Clientes**.
 {% include image.html file="prestashop17/optin.png" url="images/prestashop17/optin.png" %}
 
 ### Ultimi step
 
-Copia la tua Auth Key dal tuo account Transactionale dalla sezione **My Account-> Integration** ed incollala nel campo Auth Key nella pagina di configurazione del modulo Prestashop
+Copia tu Auth Key desde tu cuenta de Transactionale dalla sezione **My Account-> Integration** pega en Auth Key del módulo de configuración de Prestashop.
 
-{% include image.html file="prestashop17/apikey.png" url="images/prestashop17/apikey.png" %}
+{% include image.html file="prestashop16/apikey.png" url="images/prestashop16/apikey.png" %}
 
-Ricorda di Salvare le modifiche.
+Recuerda guardar todos los cambios.
 
-### Abilitare l'importazione automatica dei leads - Webhook
 
-Per l'importazione automatica dei leads tramite webhook devi selezionare **YES** nel campo **Import leads automatically**
+### Habilitar la importación automática de leads - Webhook
 
-{% include image.html file="prestashop17/webhook.png" url="images/prestashop17/webhook.png" %}
 
-Incolla il link che ti compare, nella sezione  **My Account-> Integration** del tuo account Transactionale nel campo **Webhook Url**
+ara la importación automática de leads via webhook, has de seleccionar  **Sí** en el campo **Import leads automatically**
 
-### Verifica integrazione e webhook
+{% include image.html file="prestashop16/webhook.png" url="images/prestashop16/webhook.png" %}
 
-Puoi verificare il corretto funzionamento dell'integrazione tecnologica e del webhook url tramite queste semplici istruzioni:
+Copia el link que ves en la sección  **My Account-> Integration** de tu cuenta Transactionale en el campo **Webhook Url**
+
+{% include image.html file="prestashop16/webhookurl.png" url="images/prestashop16/webhookurl.png" %}
+
+### Verifica la integración y webhook
+
+Puedes verificar la el correcto funcionamiento de la integración tecnológica y el URL Webhook a través de estas simples instrucciones:
 
 {% include_relative partials/link_verify.md %}
