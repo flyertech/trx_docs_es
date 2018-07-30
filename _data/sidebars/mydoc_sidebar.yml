@@ -109,7 +109,7 @@ entries:
         url: /verify_webhook.html
         output: web, pdf
   
-  - title: Lingua
+  - title: Lengua
     output: web, pdf
     folderitems:
 
