@@ -1,20 +1,19 @@
 ---
-title: Modalità di sviluppo
+title: Modo desarrollo
 sidebar: mydoc_sidebar
 permalink: debugging.html
 folder: mydoc
 ---
 
-## Modalità di sviluppo
+## Modo desarrollo
 
-Durante lo sviluppo, è possibile attivare un output di debug che mostrerà se e quali dati sono stati catturati dal Tag.
-E' sufficiente inserire, prima del loader, lo snippet seguente:
+Es posible habilitar una salida de debug de los datos recibidos por nuestros servidores. Esto es útil durante el desarrollo para asegurar que los datos están siendo correctamente enviados por la Tag de integración.
+Simplemente inserta este snippet antes del loader:
 
 ```
 window._trx_debug = true;
 ```
 
-Questa modalità è testata su Google Chrome (o Chromium) e Mozilla Firefox.
-Quando attiva, sarà possibile leggere in chiaro, nella console del browser, il contenuto del payload raccolto dal pixel.
+Este modo ha sido testado con Google Chrome (o Chromium) y Mozilla Firefox. Cuando se habilita, es posible leer el texto, en la consola del buscador, el contenido de la carga hecha por el Tag.
 
-Inoltre, dalla dashboard utente Transactionale, nella sezione *My account -> Integration* è possibile verificare l'effettiva ricezione dei diversi eventi.
+Además, dentro del Transactionale user dashboard, en la sección  *My account -> Integration* es posible comprobar la propia transmisión de todos estos eventos.

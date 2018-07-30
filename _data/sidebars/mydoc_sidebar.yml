@@ -19,9 +19,9 @@ entries:
     output: web, pdf
     folderitems:
 
-  #   - title: Integrazione completa
-  #     url: /full_integration.html
-  #     output: web, pdf
+    - title: Full integration
+      url: /full_integration.html
+      output: web, pdf
 
     - title:  Integración simplificada
       url: /simplified_integration.html
@@ -69,7 +69,7 @@ entries:
   #     url: /webhook.html
   #     output: web, pdf
 
-  - title: Istruzioni tecniche piattaforme
+  - title:  Instrucciones técnicas de plataformas
     output: web, pdf
     folderitems:
     

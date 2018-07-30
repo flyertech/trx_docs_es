@@ -16,7 +16,7 @@ Os podéis integrar de una manera muy simple:
   - [Full integration](full_integration.html), **recomendado** para una mejor rendimiento (versión en inglés),
   - [Integración simplificada](simplified_integration.html) .
 
-E' possibile attivare la [modalità di sviluppo](debugging.html) per verificare la correttezza dell'integrazione.
+Es posible activar [modo de desarrollo](debugging.html) para verificar que la integración sea correcta.
 
 # Cómo funciona el network
 

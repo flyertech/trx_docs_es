@@ -1,60 +1,63 @@
 ---
-title: Integrazione completa
+title: Full integration
 sidebar: mydoc_sidebar
 permalink: full_integration.html
 folder: mydoc
 ---
 
-### Panoramica
+### Overview
 {% include_relative partials/integration_overview.md %}
 
-### Dove dovresti implementare lo snippet
-Per prima cosa, bisogna inserire il loader [come descritto qui.](snippet_loader.html) 
-Successivamente, devi implementare lo snippet in cinque pagine diverse:
+### Where should you implement the code?
+First, you have to insert the loader [as described here.](snippet_loader.html)
+
+Then, you should implement the snippet in the following pages:
 
 - [Home page](#home-page)
-- [Lista prodotti](#lista-prodotti) 
-- [Dettaglio prodotto](#dettaglio-prodotto)
-- [Carrello](#carrello)
-- [Pagina di conferma dell'ordine](#pagina-conferma)
-- [Ricezione dei lead](#ricezione-dei-lead)
+- [Products List](#products-list)
+- [Product details](#product-details)
+- [Shopping Basket](#shopping-basket)
+- [Order Confirmation Page](#order-confirmation-page)
+
+You can also implement the [lead-webhook](#receiving-leads) to receive leads in real-time.
 
 ### Home page 
-L'implementazione dello [snippet nella Home page](snippet_homepage.md) ci consente di monitorare i cosiddetti bouncer (ovvero gli utenti che  accedono alla Home page del sito e che poi lasciano il sito senza aver effettuato acquisti).
+The [home page snippet](snippet_homepage.md) allows monitoring the so-called *bounces*: users that land on the website and then leave without shopping.
 
-### Lista prodotti
-Una pagina del catalogo che mostra un elenco di prodotti, ad esempio: una *pagina categoria* o una pagina *risultati della ricerca*, o una pagina *brand*. 
-L'implementazione dello [snippet nella pagina lista articoli](snippet_pagina_ricerca.md) ci consente di monitorare l'interesse dell'utente verso un certo tipo di prodotto o categoria.
+### Products list
+Any page in the catalog that shows a list of products - i.e. a category page, or search results, or a brand's page.
+The [products list snippet](snippet_pagina_ricerca.md) allows monitoring of user interests toward certain products or categories.
 
-Molti utenti si limitano a navigare nelle pagine Categoria e Risultati della ricerca, senza fare clic per andare alle pagine Dettagli prodotto, e dunque l'implementazione in queste pagine di livello più elevato è la chiave per monitorare il comportamento di questi utenti.
+Many users only browse categories or search results, without clicking on any detail page, so this implementation is key to monitor these users.
 
-### Dettaglio prodotto
-La pagina Prodotto mostra i dettagli relativi a un prodotto specifico. L'installazione dello [snippet nelle pagine Prodotto](snippet_pagina_prodotto.md) è estremamente importante perché è proprio in quelle pagine che l'intento dell'utente si esprime in modo più compiuto. Vi sono molti utenti che accedono direttamente alle pagine Prodotto senza visitare prima le pagine Risultati della ricerca.
+### Product details
+The product page shows details of a single product. Installing the [product page snippet](snippet_pagina_prodotto.md) is extremely important because it can track a users's clear interest in a product. Many users directly land on product pages without going through categories or search.
 
-### Carrello
-L'implementazione dello [snippet nella pagina Carrello](snippet_carrello.md), ci permette di monitorare quegli utenti che sono vicini alla conversione sul tuo sito ma che escono dal processo prima del pagamento finale.
+### Shopping basket
+The [shopping basket snippet](snippet_carrello.md) allows monitoring users close to conversion, but do not complete the order process.
 
-### Pagina conferma
-Quando un utente completa un acquisto sul tuo sito, essi vedranno una pagina di conferma delle vendite contenente un ID ordine e un riepilogo. 
-Implementando lo [snippet nella pagina di conferma](snippet_pagina_conferma.md)  monitoreremo i prodotti che i tuoi clienti hanno acquistato.
+### Order confirmation page
+When a user completes a purchase on your website, he/she will usually be shown a confirmation page containing the order ID and its contents.
+By implementing the [confirmation page snippet](snippet_pagina_conferma.md) we will track the products your users have bought.
 
-Il monitoraggio di acquisti specifici ci permette di ottimizzare la distribuzione di offerte, in modo da non mostrare nuovamente al cliente prodotti che ha già acquistato od offerte a cui non è interessato.
+Monitoring purchases allows optimizing the distribution of targeted offers and avoids showing users products they already purchased.
 
-### Ricezione dei lead
-E' possibile ricevere automaticamente **in tempo reale** i dati dei lead generati per inserirli in flussi automatizzati, ad esempio **newsletter**, **email automation**, o altri sistemi di **remarketing**. Questo è anche indispensabile per effettuare la **deduplica** a monte e non pagare i contatti già posseduti.
+### Receiving leads
+It is possible to receive **in real time** the data of generated leads to channel them into automation flows, like **newsletters**, **email automation** systems or more.
+This is also required to allow **deduplication** of leads, to avoid paying for contacts you already possess.
 
-Trovi tutti i dettagli nella sezione [webhook](webhook.html).
+Please read the details in the [webhook](webhook.html) section.
 
-### Integrazioni opzionali o personalizzate
+### Optional or custom integrations
 TODO
 
-### Pagina generica
+### Generic page view
 TODO
 
-### Evento personalizzato di generazione Lead
+### Custom lead-generation events
 TODO
 
-### Invio manuale di una mail promozionale
+### Manually sending a promotional email
 TODO
 
 
