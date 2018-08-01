@@ -23,8 +23,8 @@ Es posible activar [modo de desarrollo](debugging.html) para verificar que la in
 ## Advertiser {#advertiser}
 Con **Transactionale** podrás atraer nuevos clientes potenciales en tu e-shop y traquear sus conversiones.
 
-### Cómo atraigo a nuevos clientes?
-En sólo unos pasos, serás capaz de crear una **campaña de publicidad**y nosotros **la distribuiremos en nuestro network**. Los clientes de otras tiendas recibirán tu oferta y querrán hacer uso de ella en tu página web. Esto te permitirá adquirir Leads cualificados de clientes reales que compran online.
+### ¿Cómo atraigo a nuevos clientes?
+En sólo unos pasos, serás capaz de crear una **campaña de publicidad** y nosotros **la distribuiremos en nuestro network**. Los clientes de otras tiendas recibirán tu oferta y querrán hacer uso de ella en tu página web. Esto te permitirá adquirir Leads cualificados de clientes reales que compran online.
 
 Si también eliges ser [publisher](#publisher), puedes **monetizar**, y  reinvertir las ganancias en campañas de adquisición de leads cualificados, disminuyendo su coste. 
 
@@ -36,12 +36,12 @@ A la vez podemos enviar cada lead generado en tu sistema en **tiempo real** para
 ## Publisher {#publisher}
 Con **Transactionale** serás capaz de monetizar gracias a tus clientes al mismo tiempo que premias ofreciéndoles ofertas especiales targuetizadas.
 
-### Cómo gano a través del network?
+### ¿Cómo gano a través del network?
 Cuando Lisa, uno de tus clientes, **finaliza una compra en tu eshop**, Transactionale le enviará unas ofertas de otras tiendas de la red- Complementarias, no competencia- Cada vez que una oferta genera un lead, ( que es cuando Lisa hace click en la oferta y aterriza en la web del advertiser) tú, **ganas dinero**.
 
 Además, si eres [advertiser](#advertiser), puedes reinvertir tus ganancias en campañas de adquisición de leads cualificados bajando los costes de las mismas.
 
-### Cómo funciona?
+### ¿Cómo funciona?
 1. Lisa hace una orden en tu eshop,
 2. Cada vez que se **finaliza una orden**, tu tienda **nos lo notifica** a través de un **snippet de trackeo**, normalmente **en la thank you page**,
 3. Tan pronto como Transactionale recibe la notificación, mandará a Lisa el **email Transactionale** con ofertas targuetizadas,

@@ -1,5 +1,5 @@
 ---
-title: Verify integration 
+title: Verifca la integración 
 sidebar: mydoc_sidebar
 permalink: verify_integration.html
 folder: mydoc

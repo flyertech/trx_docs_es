@@ -1,5 +1,5 @@
 ---
-title: Verifica webhook
+title: Verify webhook
 sidebar: mydoc_sidebar
 permalink: verify_webhook.html
 folder: mydoc
