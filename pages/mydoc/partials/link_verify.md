@@ -1,2 +1,2 @@
-[Verify integration ](verify_integration.html) <br>
-[Verify webhook](verify_webhook.html)
+[Verifica la integración](verify_integration.html) <br>
+[Verifica webhook](verify_webhook.html)
