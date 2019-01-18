@@ -23,7 +23,7 @@ Se abrirá un box de detalles con dentro dos URL:
 
 Es posible utilizar estos dos URL para generar tag imagen a mano o, cliqueando sobre el botón Snippet es disponible un tag de ejemplo, listo para pegar.
 
-<!--{% include callout.html content="IMPORTANTE: è necessario **personalizzare gli URL** prima dell’utilizzo" %}-->
+{% include callout.html content="IMPORTANTE: es necesario  **personalizar los URL** antes del utilizo" %}
 
 ### Personalización de los URL
 Para garantizar el funcionamiento del touchpoint, es necesario substituir la parte **{transaction_id}**  de los dos URL con una variable unívoca para cada correo enviado, por ejemplo el número de pedido.Verificar como utilizar las variables en la documentación de la propia plataforma. 
@@ -37,7 +37,7 @@ Si se quiere insertar el banner en más de un tipo de correo, teniendo el mismo 
 https://trto.it/m/xxxxxx/yyy/b?transaction_id=order_confirmation_{ $order->id }
 ```
 
-<!--{% include callout.html content="IMPORTANTE: il valore del campo **transaction_id** deve essere identico in entrambi gli URL!" %}-->
+{% include callout.html content="IMPORTANTE:  el valor del campo **transaction_id** tiene que ser igual en ambos URL" %}
 
 
 ### Posicionamiento del banner
