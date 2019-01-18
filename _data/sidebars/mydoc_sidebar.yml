@@ -108,6 +108,16 @@ entries:
       - title: Verifica webhook
         url: /verify_webhook.html
         output: web, pdf
+
+
+  - title: Banner in email
+    output: web, pdf
+    folderitems:
+
+      - title: Instrucciones
+        url: /banner_email.html
+        output: web, pdf
+
   
   - title: Idioma
     output: web, pdf
