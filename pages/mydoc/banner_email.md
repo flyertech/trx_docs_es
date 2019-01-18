@@ -9,7 +9,7 @@ folder: mydoc
 Para los **Publisher habilitados**,  es posible  **insertar en los correos enviados un banner** con una oferta seleccionada automáticamente por Transactionale, para incrementar el número de las ofertas vehiculadas y la posibilidad de monetización y fidelización.  
 
 ### Caraterísticas principales
-El banner email no prevé la transmisión de los datos personales a Transacitionale, por lo tanto está en **n conformidad con el GDPR**sin necesidad de intervenir en los consentimientos de privacidad. 
+El banner email no prevé la transmisión de los datos personales a Transacitionale, por lo tanto está en **conformidad con el GDPR** sin necesidad de intervenir en los consentimientos de privacidad. <br>
 **La integración es inmediata** ya que simplemente consta de una imagen con un enlace en el template de los correos enviados. 
 
 ### Activación del touchpoint
