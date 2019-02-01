@@ -29,12 +29,13 @@ Es posible utilizar estos dos URL para generar tag imagen a mano o, cliqueando s
 Para garantizar el funcionamiento del touchpoint, es necesario substituir la parte **{transaction_id}**  de los dos URL con una variable unívoca para cada correo enviado, por ejemplo el número de pedido.Verificar como utilizar las variables en la documentación de la propia plataforma. 
 Ejemplo:
 ```html
-https://trto.it/m/xxxxxx/yyy/b?transaction_id={ $order->id }
-```
+https://trto.it/m/xxxxxx/yyy/b?transaction_id={ $order->id }&zip_code={ $zip_code }&gender={ $gender }
+
 
 Si se quiere insertar el banner en más de un tipo de correo, teniendo el mismo transaction_id, se aconseja utilizar un prefijo para distinguir los contenidos, por ejemplo:
 ```html
-https://trto.it/m/xxxxxx/yyy/b?transaction_id=order_confirmation_{ $order->id }
+https://trto.it/m/xxxxxx/yyy/b?transaction_id={ $order->id }&zip_code={ $zip_code }&gender={ $gender }
+
 ```
 
 {% include callout.html content="IMPORTANTE:  el valor del campo **transaction_id** tiene que ser igual en ambos URL" %}
@@ -44,7 +45,7 @@ https://trto.it/m/xxxxxx/yyy/b?transaction_id=order_confirmation_{ $order->id }
 Es posible **insertar el banner en cada zona del correo**,  garantizando que pueda ocupar el 100% del ancho del layout, por ejemplo insertando **el estilo en el tag:**
 
 ```html
-<a href="https://trto.it/m/xxxxxx/yyy/click?transaction_id={transaction_id}" target="_blank">
-  <img src="https://trto.it/m/xxxxxx/yyy/b?transaction_id={transaction_id}" style="width: 100%">
+<a href="https://trto.it/m/xxxxxx/yyy/click?transaction_id={transaction_id}}&zip_code={ $zip_code }&gender={ $gender }" target="_blank">
+  <img src="https://trto.it/m/xxxxxx/yyy/b?transaction_id={transaction_id}}&zip_code={ $zip_code }&gender={ $gender }" style="width: 100%">
 </a>
 ```
