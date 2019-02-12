@@ -19,7 +19,7 @@ Desde la sección **Monetize -> Web Touchpoints** de tu account Transactionale, 
 
 Se abrirá un box de detalles con dentro dos URL:
 
-{% include image.html file="email_banner2.png" url="images/email_banner2.png" %}
+{% include image.html file="snippet_mail_banner2.png" url="images/snippet_mail_banner2.png" %}
 
 Es posible utilizar estos dos URL para generar tag imagen a mano o, cliqueando sobre el botón Snippet es disponible un tag de ejemplo, listo para pegar.
 
@@ -29,12 +29,12 @@ Es posible utilizar estos dos URL para generar tag imagen a mano o, cliqueando s
 Para garantizar el funcionamiento del touchpoint, es necesario substituir la parte **{transaction_id}**  de los dos URL con una variable unívoca para cada correo enviado, por ejemplo el número de pedido.Verificar como utilizar las variables en la documentación de la propia plataforma. 
 Ejemplo:
 ```html
-https://trto.it/m/xxxxxx/yyy/b?transaction_id={ $order->id }&zip_code={ $zip_code }&gender={ $gender }
-
+https://www.transactionale.com/m/xxxxxx/yyy/b?transaction_id={ $order->id }&zip_code={ $zip_code }&gender={ $gender }
+```
 
 Si se quiere insertar el banner en más de un tipo de correo, teniendo el mismo transaction_id, se aconseja utilizar un prefijo para distinguir los contenidos, por ejemplo:
 ```html
-https://trto.it/m/xxxxxx/yyy/b?transaction_id={ $order->id }&zip_code={ $zip_code }&gender={ $gender }
+https://www.transactionale.com/m/xxxxxx/yyy/b?transaction_id={ $order->id }&zip_code={ $zip_code }&gender={ $gender }
 
 ```
 
@@ -45,7 +45,7 @@ https://trto.it/m/xxxxxx/yyy/b?transaction_id={ $order->id }&zip_code={ $zip_cod
 Es posible **insertar el banner en cada zona del correo**,  garantizando que pueda ocupar el 100% del ancho del layout, por ejemplo insertando **el estilo en el tag:**
 
 ```html
-<a href="https://trto.it/m/xxxxxx/yyy/click?transaction_id={transaction_id}}&zip_code={ $zip_code }&gender={ $gender }" target="_blank">
-  <img src="https://trto.it/m/xxxxxx/yyy/b?transaction_id={transaction_id}}&zip_code={ $zip_code }&gender={ $gender }" style="width: 100%">
+<a href="https://www.transactionale.com/m/xxxxxx/yyy/click?transaction_id={transaction_id}}&zip_code={ $zip_code }&gender={ $gender }" target="_blank">
+  <img src="https://www.transactionale.com/m/xxxxxx/yyy/b?transaction_id={transaction_id}}&zip_code={ $zip_code }&gender={ $gender }" style="width: 100%">
 </a>
 ```
